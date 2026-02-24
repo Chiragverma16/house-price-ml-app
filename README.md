@@ -56,22 +56,5 @@ User → Streamlit UI → FastAPI Backend → ML Pipeline → Prediction
 
 ---
 
-## PROJECT STRUCTURE
-house-price-ml-app/
-│
-├── backend/
-│ ├── fast_app.py
-│ └── artifacts/
-│ ├── model.pkl
-│ └── pipeline.pkl
-│
-├── frontend/
-│ └── streamlit_app.py
-│
-├── src/
-│ ├── train_pipeline.py
-│ └── predict_pipeline.py
-│
-├── Dockerfile
-├── requirements.txt
-└── README.md
+##  PROJECT STRUCTURE
+<img width="380" height="416" alt="Screenshot 2026-02-24 134149" src="https://github.com/user-attachments/assets/11cd364e-eb5a-477d-a3da-eee3de198625" />
