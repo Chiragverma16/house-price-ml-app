@@ -58,3 +58,8 @@ User → Streamlit UI → FastAPI Backend → ML Pipeline → Prediction
 
 ##  PROJECT STRUCTURE
 <img width="380" height="416" alt="Screenshot 2026-02-24 134149" src="https://github.com/user-attachments/assets/11cd364e-eb5a-477d-a3da-eee3de198625" />
+
+--
+
+## DATASET USED: 
+https://www.kaggle.com/datasets/camnugent/california-housing-prices
