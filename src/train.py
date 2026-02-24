@@ -14,7 +14,7 @@ from sklearn.metrics import root_mean_squared_error
 from sklearn.model_selection import cross_val_score
 
 # 1. Load the data
-housing = pd.read_csv("housing.csv")
+housing = pd.read_csv("data/housing.csv")
 
 # 2. Create income category
 housing["income_cat"] = pd.cut(
@@ -85,7 +85,13 @@ print("\nDecision Tree Regressor model: ")
 print(pd.Series(dec_rmses).describe())
 
 # Random Forest Regressor model
-random_forest_reg = RandomForestRegressor()
+random_forest_reg = RandomForestRegressor(
+    n_estimators=100,
+    max_depth=15,
+    min_samples_leaf=2,
+    random_state=42,
+    n_jobs=-1
+)
 random_forest_reg.fit(housing_prepared, housing_labels)
 random_forest_preds = random_forest_reg.predict(housing_prepared)
 random_forest_rmse = root_mean_squared_error(housing_labels, random_forest_preds)
